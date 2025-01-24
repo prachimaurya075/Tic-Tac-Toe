@@ -1,0 +1,112 @@
+*{
+     margin:0;
+     padding:0;
+
+}
+body {
+     
+    
+    background-color: #4522c3;
+    text-align: center;
+    /* background: url("https://www.shutterstock.com/video/clip-1109768427-round-4k-uhd-60fps-glowing-neon-science"); */
+    background-size: cover;
+
+}
+
+.container {
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.game {
+    height: 60vmin;
+    width: 60vmin;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5vmin;
+}
+ 
+ .box {
+     height: 18vmin;
+     width: 18vmin;
+     border-radius: 1rem;
+     border: none;
+    box-shadow: 0 0 16px rgba(0,0,0,0.5);
+    font-size:8vmin ;
+    color: white;
+    background-color: rgb(166, 47, 221);
+    cursor: pointer;
+ }
+
+ h1{
+    color: black;
+    font-size: 40px;
+    -webkit-text-stroke: 1px rgb(227, 218, 218);
+    margin-bottom: 10px;
+    
+    
+
+ }
+
+ #reset-btn{
+    padding: 0.55rem;
+    font-size: 1.25rem;
+    background-color: rgb(28, 195, 23);
+    color: white;
+    border-radius: 20px;
+    margin-bottom: 15px;
+    border: none;
+ }
+    
+ 
+
+ #new-btn{
+    padding: 0.65rem;
+    font-size: 1.25rem;
+    background-color: green;
+    color: white;
+    border-radius: 20px;
+    border: none;
+    
+ }
+ 
+ #msg{
+    color: rgb(190, 131, 20);
+    font-size: 49px;
+    font-family:cursive;
+    font-weight: 800;
+   margin-bottom: 6px;
+ }
+
+ .msg-container{
+    height: 5%;
+ }
+
+ .hide{
+    display: none;
+ }
+
+ #music-btn{
+    padding: 0.55rem;
+    font-size: 1.1rem;
+    background-color: red;
+    color: white;
+    border-radius: 15px;
+    border: none;
+
+ }
+
+ #bg-video {
+    position: fixed;  /* Fix the video to cover the entire viewport */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;  /* Ensures the video covers the whole screen without distortion */
+    z-index: -1;  /* Sends video to the background */
+    opacity: 0.3;
+}
